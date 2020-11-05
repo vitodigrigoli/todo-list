@@ -2,7 +2,7 @@ export const data = [
 	{
 		id: 0,
 		title: 'Review JavaScript',
-		priority: 'hight',
+		priority: 'high',
 		description: 'Study the new ES6 syntax to avoid having problems with React'
 
 	},

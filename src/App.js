@@ -61,7 +61,7 @@ function App() {
       ...newTodo,
       title: '',
       description: '',
-      priority: 'hight'
+      priority: 'high'
     })
   }
 

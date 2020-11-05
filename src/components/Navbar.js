@@ -9,21 +9,14 @@ function Navbar(props){
 	const getClassTitle = theme => theme === 'light' ? 'has-text-black' : 'has-text-white'
 
 	return(
-		<nav className={`navbar is-align-items-center py-3 ${getClassNav(theme.value)}`} role="navigation" aria-label="main navigation">
-			<div className="container">
-				<div className={`navbar-brand`}>
+		<div className={` navbar ${getClassNav(theme.value)}`} role="navigation" aria-label="main navigation">
+				<div className={`navbar__title`}>
 					<h1 className={`title has-text-weight-bold ${getClassTitle(theme.value)}`}>TODO LIST</h1>
 				</div>
-				<div className="navbar-menu">
-					<div className="navbar-end">
-						<div className="navbar-item">
-							<Button/>
-						</div>
-					</div>
-				</div>
+			<div className={`Navbar__button`}>
+				<Button/>
 			</div>
-
-		</nav>
+		</div>
 	)
 }
 

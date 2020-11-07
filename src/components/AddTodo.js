@@ -7,6 +7,7 @@ function AddTodo(props){
 
 	const getClassForm = theme => theme === 'light'? 'has-background-light' : 'has-background-dark'
 	const getClassText = theme => theme === 'light'? 'has-text-dark' : 'has-text-light'
+	const getClassButton = theme => theme === 'light'? 'is-light' : 'is-dark'
 
 	return(
 		<div className={`column is-6`}>
@@ -58,7 +59,7 @@ function AddTodo(props){
 						<button className="button is-primary" type="submit">Submit</button>
 					</div>
 					<div className="control">
-						<button className="button is-link is-light is-inverted" type="button" onClick={props.handleReset}>Cancel</button>
+						<button className={`button ${getClassButton(theme.value)} is-inverted" type="button" onClick={props.handleReset}`}>Cancel</button>
 					</div>
 				</div>
 			</form>

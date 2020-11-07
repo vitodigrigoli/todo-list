@@ -15,3 +15,7 @@
     justify-content: space-between;
     padding: 10px 30px;
 }
+
+body{
+    overflow-x: hidden;
+}

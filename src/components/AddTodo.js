@@ -58,7 +58,7 @@ function AddTodo(props){
 						<button className="button is-primary" type="submit">Submit</button>
 					</div>
 					<div className="control">
-						<button className="button is-link is-light is-inverted" onClick={props.handleReset}>Cancel</button>
+						<button className="button is-link is-light is-inverted" type="button" onClick={props.handleReset}>Cancel</button>
 					</div>
 				</div>
 			</form>
